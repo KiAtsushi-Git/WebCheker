@@ -72,7 +72,6 @@ def print_info(domain, url, ip_address, ip_info_str, domain_info_str, parsed_det
 
 def Domain_Check(url=None):
     if url is None:
-        # If no URL is provided, use argparse to get the URL from the command line
         parser = argparse.ArgumentParser(description="Domain Information Checker")
         parser.add_argument('-U', '--URL', required=True, help="Enter the URL (e.g., https://example.com)")
         args = parser.parse_args()
