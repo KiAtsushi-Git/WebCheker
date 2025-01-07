@@ -73,7 +73,6 @@ def print_dns_records(records, dns_server):
 
 def DNS_Rec(domain=None, dns=None):
     if domain is None and dns is None:
-        # Argument parsing for CLI execution
         parser = argparse.ArgumentParser(description="Query DNS records for a given domain.")
         parser.add_argument('-U', '--url', type=str, required=True, help="URL to query DNS records for")
         parser.add_argument('-D', '--DNS', type=str,
@@ -89,7 +88,6 @@ def DNS_Rec(domain=None, dns=None):
             dns_servers = DEFAULT_DNS_SERVERS
 
     else:
-        # If domain and dns are provided directly, we use them
         print(f"Extracted domain: {domain}")
         if dns:
             dns_servers = [dns]
