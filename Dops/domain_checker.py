@@ -1,13 +1,14 @@
 """Domain checker"""
 
-import json
 import argparse
+import json
 import socket
 from urllib.parse import urlparse
-import whois
-from whois.exceptions import WhoisException
+
 import requests
+import whois
 from bs4 import BeautifulSoup
+from whois.exceptions import WhoisException
 
 
 def get_ip_address(domain):

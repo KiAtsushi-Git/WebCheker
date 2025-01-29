@@ -1,8 +1,8 @@
 """Port scanner"""
 
+import argparse
 import asyncio
 import time
-import argparse
 
 
 async def scan_port(ip, port):

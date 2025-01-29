@@ -1,10 +1,11 @@
 """SSL scanner"""
 
-from urllib.parse import urlparse
-from datetime import datetime
 import argparse
-import ssl
 import socket
+import ssl
+from datetime import datetime
+from urllib.parse import urlparse
+
 import certifi
 
 

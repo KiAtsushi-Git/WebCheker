@@ -2,8 +2,9 @@
 
 import argparse
 from urllib.parse import urlparse
-import dns.resolver
+
 import dns.exception
+import dns.resolver
 
 DNS_SERVER_NAMES = {
     "8.8.8.8": "Google DNS",
