@@ -1,13 +1,15 @@
 """WebChecker"""
 
-import sys
 import importlib
+import sys
+
 from colorama import Fore, Style, init
+
 from Dops.dns_records import dns_rec
 from Dops.domain_checker import domain_check
+from Dops.port_scanner import scan
 from Dops.ssl_scanner import ssl_check
 from Dops.subdomains_cheker import subdom_check
-from Dops.port_scanner import scan
 
 init(autoreset=True)
 G = Fore.GREEN  # green text color
